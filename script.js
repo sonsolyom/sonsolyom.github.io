@@ -2,39 +2,27 @@
 const reviews = [
     {
       id: 1,
-      name: "susan smith",
-      job: "web developer",
-      img:
-        "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+      name: "Írisz",
       text:
-        "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+        "Nagy teherbirasu es rendkivul lelkiismeretes embernek ismertelek meg. Barmilyen kerdessel es keressel fordulhatok hozzad, keszsegesen segitesz. Szamtalan helyzetben allod a kihivasokat, a maximumot nyujtva.",
     },
     {
       id: 2,
-      name: "anna johnson",
-      job: "web designer",
-      img:
-        "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
+      name: "Nándor",
       text:
-        "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+        "Solyom is an extremely hard working and dedicated guy, who loves what he's doing. He is reliable and very easy to work with. I would definately recommend him. If you have a vision, he can help you bring it to life!",
     },
     {
       id: 3,
-      name: "peter jones",
-      job: "intern",
-      img:
-        "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
+      name: "Ani",
       text:
-        "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+        "Solyom is highly professional, kind, polite and very easy to work with. All of our visions came true through his precise and profound hard work.",
     },
     {
       id: 4,
-      name: "bill anderson",
-      job: "the boss",
-      img:
-        "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
+      name: "Kristóf",
       text:
-        "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+        " 1. -Dedicated and hard-working. Working together with Solyom in a few words – momentum, cooperation and precision and humour. I LOVE his style and innovative ideas. 2. -Utterly satisfied! I can only recommend you working with Solyom. We could always negotiate if something was up flexibility and hard work for real! I know whom I will turn to. 3. -Nice guy, nice work. Happy I was working with him. His attitude is just great! Wouldn’t hesitate to call him again!",
     },
 ];
 
