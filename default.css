@@ -16,6 +16,8 @@
 
     --fixed-width: 620px;
 
+    --language-color: '/images/dark-languages.png';
+
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -75,15 +77,23 @@ h6{font-size: 16px;}
 }
 
 .language-container{
+    position: absolute;
+    right: 0px;
+    bottom: -25px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+#language_img{
+    width: 3%;
+    src: var(--language-color);
+    padding-right: 5px;
+    
 }
 
 .language-container a{
     font-size: 14px;
-}
-
-.language-container a:first-child{
     padding-right: 10px;
 }
 
@@ -112,6 +122,7 @@ h6{font-size: 16px;}
 }
 
 .nav-wrapper{
+    position: relative;
     border-radius: 5px 5px 0 0;
     grid-area: nav-wrapper;
     border-bottom: 1px solid var(--borderColor);
@@ -461,10 +472,7 @@ button:focus {
 }
 
 @media screen and (max-width: 800px){
-    .language-container{
-        justify-content: space-between;
-    }
-    
+      
     
     .intro-wrapper{
         grid-template-columns: 1fr;
