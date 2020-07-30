@@ -22,7 +22,7 @@ const reviews = [
       id: 4,
       name: "Kristóf",
       text:
-        " 1. -Dedicated and hard-working. Working together with Solyom in a few words – momentum, cooperation and precision and humour. I LOVE his style and innovative ideas. 2. -Utterly satisfied! I can only recommend you working with Solyom. We could always negotiate if something was up flexibility and hard work for real! I know whom I will turn to. 3. -Nice guy, nice work. Happy I was working with him. His attitude is just great! Wouldn’t hesitate to call him again!",
+        "I can only recommend you working with Solyom. Hard-working and dedicated. Working together with him in a few words – momentum, cooperation and precision and humour. I love his style and innovative ideas. I know whom I will turn to."
     },
 ];
 
