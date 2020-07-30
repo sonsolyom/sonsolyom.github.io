@@ -1,10 +1,10 @@
 // local reviews data
-const reviews = [
+const reviewsEn = [
     {
       id: 1,
       name: "Írisz",
       text:
-        "Nagy teherbirasu es rendkivul lelkiismeretes embernek ismertelek meg. Barmilyen kerdessel es keressel fordulhatok hozzad, keszsegesen segitesz. Szamtalan helyzetben allod a kihivasokat, a maximumot nyujtva.",
+        "I know him as an individual of great capacity and extreme conscientious. Yuo can ask any question or have any request he will be more than honored to be at your service. He can take any challenge in any situation to provide at the highest value.",
     },
     {
       id: 2,
@@ -20,11 +20,51 @@ const reviews = [
     },
     {
       id: 4,
-      name: "Kristóf",
+      name: "Bátor",
       text:
-        "I can only recommend you working with Solyom. Hard-working and dedicated. Working together with him in a few words – momentum, cooperation and precision and humour. I love his style and innovative ideas. I know whom I will turn to."
+        "I can only recommend you working with Solyom. Hard-working and dedicated. Working together with him in a few words – momentum, cooperation, precision and humour. I love his style and innovative ideas. I know whom I will turn to."
+    },
+    {
+      id: 5,
+      name: "Bajnok",
+      text:
+        "Solyom is a people-centered man, who always listens to the customers' needs. He loves to learn new things, new methods to improve in his private life and his career."
     },
 ];
+
+const reviewsHu = [
+  {
+    id: 1,
+    name: "Írisz",
+    text:
+      "Nagy teherbírású es rendkívül lelkiismeretes embernek ismertem meg. Bármilyen kérdéssel és kéréssel fordulhatsz hozzá, készségesen segít benne. Számtalan helyzetben állja a kihívásokat, a maximumot nyújtva.",
+  },
+  {
+    id: 2,
+    name: "Nándor",
+    text:
+      "Solyom egy hihetetlenül szorgalmas és elszánt ember, aki imádja amit csinál. Nagyon megbizható és nagyon könnyen lehet vele együtt dolgozni. Mindenképp ajánlanám a közös munkát. A te víziódat is segítheti életre kelteni!",
+  }, 
+  {
+    id: 3,
+    name: "Ani",
+    text:
+      "Solyom jól képzett, kedves, udvarias és könnyű vele együtt dolgozni. Minden víziónk valóra vált a precíz és szorgalmas munkájának köszönhetően.",
+  }, 
+  {
+    id: 4,
+    name: "Bátor",
+    text:
+      "Csak ajánlani tudom, hogy Solyommal dolgozz. Szorgalmas és elszánt. A vele való közös munka pár szóban - lendületes, kooperáció, pontosság és humor. Szeretem a stílusát és az innovatív ötleteit. Legközelebb is tudom, hogy kihez fogok fordulni."
+  }, 
+  {
+    id: 5,
+    name: "Bajnok",
+    text:
+      "Solyom egy emberközpontú srác, aki minden figyel és hallgat a vásárlók igényire. Imád új dolgokat, eljárásokat tanulni, hogy fejlődhessen, mind a privát életében, mind pedig a karrierjében."
+  },
+];
+
 
 const img = document.getElementById('person-img');
 const author = document.getElementById('author');
@@ -36,6 +76,15 @@ const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
 
 // reviews
+
+let reviews = 0;
+
+if(document.documentElement.lang == "en"){
+  reviews = reviewsEn;
+} else if(document.documentElement.lang == "hu"){
+  reviews = reviewsHu;
+}
+
 let currentItem = 0;
 
 window.addEventListener('DOMContentLoaded', function(){
@@ -158,7 +207,7 @@ function docReady(fn) {
         if(message.length >= 10){
             console.log('Message is valid.')
         } else {
-            console.log('MEssage is not valid.')
+            console.log('Message is not valid.')
         }
         
     })
