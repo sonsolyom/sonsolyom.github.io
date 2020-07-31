@@ -8,27 +8,33 @@ const reviewsEn = [
     },
     {
       id: 2,
+      name: "Győző",
+      text:
+        "Sólyom is driven, persistent, resourceful, while He is also creative and flexible. Tough I got to know his attitude and work from a non-IT side, I am convinced He completes his goals and tasks just as thoroughly in any field of life."
+    },
+    {
+      id: 3,
       name: "Nándor",
       text:
         "Solyom is an extremely hard working and dedicated guy, who loves what he's doing. He is reliable and very easy to work with. I would definately recommend him. If you have a vision, he can help you bring it to life!",
     },
+        {
+      id: 4,
+      name: "Bajnok",
+      text:
+        "Solyom is a people-centered man, who always listens to the customers' needs. He loves to learn new things, new methods to improve in his private life and his career."
+    },
     {
-      id: 3,
+      id: 5,
       name: "Ani",
       text:
         "Solyom is highly professional, kind, polite and very easy to work with. All of our visions came true through his precise and profound hard work.",
     },
     {
-      id: 4,
+      id: 6,
       name: "Bátor",
       text:
         "I can only recommend you working with Solyom. Hard-working and dedicated. Working together with him in a few words – momentum, cooperation, precision and humour. I love his style and innovative ideas. I know whom I will turn to."
-    },
-    {
-      id: 5,
-      name: "Bajnok",
-      text:
-        "Solyom is a people-centered man, who always listens to the customers' needs. He loves to learn new things, new methods to improve in his private life and his career."
     },
 ];
 
@@ -41,28 +47,34 @@ const reviewsHu = [
   },
   {
     id: 2,
+    name: "Győző",
+    text:
+      "Sólyom elszánt, kitartó, leleményes, mindezek mellett még kreatív és rugalmas is. IT területen kívül ismertem meg a hozzáállását és a munkáját, de meggyőzött arról, hogy az élet bármely területén alaposan végzi az elvállalt feladatot vagy a kitűzött célt."
+  },
+  {
+    id: 3,
     name: "Nándor",
     text:
       "Solyom egy hihetetlenül szorgalmas és elszánt ember, aki imádja amit csinál. Nagyon megbizható és nagyon könnyen lehet vele együtt dolgozni. Mindenképp ajánlanám a közös munkát. A te víziódat is segítheti életre kelteni!",
-  }, 
-  {
-    id: 3,
-    name: "Ani",
-    text:
-      "Solyom jól képzett, kedves, udvarias és könnyű vele együtt dolgozni. Minden víziónk valóra vált a precíz és szorgalmas munkájának köszönhetően.",
-  }, 
+  },
   {
     id: 4,
-    name: "Bátor",
-    text:
-      "Csak ajánlani tudom, hogy Solyommal dolgozz. Szorgalmas és elszánt. A vele való közös munka pár szóban - lendületes, kooperáció, pontosság és humor. Szeretem a stílusát és az innovatív ötleteit. Legközelebb is tudom, hogy kihez fogok fordulni."
-  }, 
-  {
-    id: 5,
     name: "Bajnok",
     text:
       "Solyom egy emberközpontú srác, aki minden figyel és hallgat a vásárlók igényire. Imád új dolgokat, eljárásokat tanulni, hogy fejlődhessen, mind a privát életében, mind pedig a karrierjében."
+  }, 
+  {
+    id: 5,
+    name: "Ani",
+    text:
+      "Solyom jól képzett, kedves, udvarias és könnyű vele együtt dolgozni. Minden víziónk valóra vált a precíz és szorgalmas munkájának köszönhetően.",
   },
+  {
+    id: 6,
+    name: "Bátor",
+    text:
+      "Csak ajánlani tudom, hogy Solyommal dolgozz. Szorgalmas és elszánt. A vele való közös munka pár szóban - lendületes, kooperáció, pontosság és humor. Szeretem a stílusát és az innovatív ötleteit. Legközelebb is tudom, hogy kihez fogok fordulni."
+  },    
 ];
 
 
