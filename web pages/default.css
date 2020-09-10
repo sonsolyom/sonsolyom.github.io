@@ -64,6 +64,7 @@ h6{font-size: 16px;}
 }
 
 .s2{
+    min-height: 85vh;
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
     overflow: auto;
