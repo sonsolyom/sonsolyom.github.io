@@ -204,7 +204,7 @@ footer {
   word-wrap: break-word;
   align-items: center;
   min-height: 30em;
-  margin-top: 5em;
+  margin-top: 1em;
   
   
 }
@@ -285,6 +285,11 @@ footer {
     transition: .2s ease-in-out;
   }
 
+  .welcome-container {
+    max-width: 100%;
+    margin: 1em;
+  }
+
 
   .nav-width-container{
     flex-direction: column;
@@ -333,6 +338,7 @@ footer {
       &.open, .sub {
         clip-path: circle(1300px at 50% -10%);
         pointer-events: all;
+        font-size: 80%;
       }
 
       .nav-link a {
@@ -342,8 +348,13 @@ footer {
     }
   }
 
+  .welcome-text {
+    min-height: 10vh;
+  }
+
   .section-container {
     justify-content: center;
+    
   }
 
   .brand-text::before {

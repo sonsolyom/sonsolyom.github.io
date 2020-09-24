@@ -230,7 +230,7 @@ footer {
   word-wrap: break-word;
   align-items: center;
   min-height: 30em;
-  margin-top: 5em;
+  margin-top: 1em;
 }
 
 .brand-text {
@@ -319,6 +319,10 @@ footer {
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
   }
+  .welcome-container {
+    max-width: 100%;
+    margin: 1em;
+  }
   .nav-width-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -372,9 +376,13 @@ footer {
     -webkit-clip-path: circle(1300px at 50% -10%);
             clip-path: circle(1300px at 50% -10%);
     pointer-events: all;
+    font-size: 80%;
   }
   .nav-width-container .nav-links .nav-link a, .nav-width-container .sub .nav-link a {
     font-size: 1.5em;
+  }
+  .welcome-text {
+    min-height: 10vh;
   }
   .section-container {
     -webkit-box-pack: center;
