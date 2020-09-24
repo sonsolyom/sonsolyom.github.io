@@ -7,12 +7,12 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #bdbdbd;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   
 }
 
 a {
-  color: #bdbdbd;
+  color: #d3a7ad;
   text-decoration: none;
 
   &:hover {
@@ -24,12 +24,41 @@ a {
 }
 
 .bg {
-  background: url('./image/pexels-ylanite-koppens-934062.jpg');
-  opacity: 0.7;
+  
+  //filter: opacity(0.4);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &::before{
+    content: "";
+    background-image: url('./image/pexels-jess-bailey-designs-1167051.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  &.welcome {
+    
+    &::before{
+      content: "";
+      background-image: url('./image/pexels-karolina-grabowska-4041285.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.38;
+      
+    }
+  }
 }
 
 .main-container {
@@ -64,7 +93,7 @@ a {
 
   a {
     &:hover {
-      color: #d3a7ad;
+      color: #fff;
       background-color: transparent;
       transform: scale(1.5, 1.5);
       transition: .5s ease-in-out;
@@ -73,15 +102,10 @@ a {
 }
 
 .nav-links {
+  position: relative;
   display: flex;
   justify-content: space-between;
   
-  :last-child {
-  
-    :last-child {
-      padding-right: 2em;
-    }
-  }
 }
 
 .nav-link {
@@ -96,22 +120,69 @@ a {
  
   }
 
-  
+  .sub {
+    position: absolute;
+    display: none;
+    clear:both;
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:180px;
+    text-align: center;
+    left: 0;
+    
+    &.larger{
+      width: 220px;
+      left: -50%;
+    }
+   
+    a {
+      padding: 1em;
+    }
+
+     
+  }
 }
 
-//Main Body
+ul li:hover ul.sub{
+    display: inline-flex;	/* Display the dropdown */
+    
+    
+}
+ul li ul.sub li{
+    display: inline-flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+
+}
+
+//Footer
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+//Main Body - Welcome Page
 
 .welcome-container {
   max-width: 85%;
   margin: 0 auto;
-  color: #d3a7ad;
+  margin-top: 3.5em;
+  color: #691844;
 }
-
-/*.welcome-img {
-  max-height: 70vh;
-  overflow: hidden;
-  object-fit: fill;
-}*/
 
 .welcome-text {
   display: flex;
@@ -123,14 +194,17 @@ a {
   font-size: 5em;
   font-weight: 700;
   font-style: italic;
+
 }
 
 .section-container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   word-wrap: break-word;
   align-items: center;
   min-height: 30em;
+  margin-top: 5em;
   
   
 }
@@ -151,31 +225,66 @@ a {
   }
 }
 
-//Footer
 
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  min-height: 5vh;
+// Main - About Page
+
+.big-box {
+  max-width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin: 0 auto;
+
+  &.help{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .box1 {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    img{
+      max-height: 80vh;
+    }
+  }
+
+  .box2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+
+    & p{
+      padding-top: 1em;
+      line-height: 1.5;
+    }
+  }
 }
 
-footer {
-  font-weight: 700;
-  cursor: pointer;
+// Main - Help Page
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .larger {
+    left: 10%;
+  }
+
+  .larger > li > a{
+    font-size: 80%;
+  }
 }
 
-
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body {
     font-size: 70%;
     transition: .2s ease-in-out;
   }
+
 
   .nav-width-container{
     flex-direction: column;
@@ -201,12 +310,12 @@ footer {
       }
     }
 
-    .nav-links {
+    .nav-links, .sub {
       position: fixed;
       overflow: hidden;
       justify-content: space-evenly;
       text-align: center;
-      background: black;
+      background-color: #757575;
       height: 110vh;
       width: 100%;
       top: -10vh;
@@ -216,7 +325,12 @@ footer {
       transition: all 1s ease-out;
       pointer-events: none;
 
-      &.open {
+      .larger{
+        position: relative;
+        left:0;
+      }
+
+      &.open, .sub {
         clip-path: circle(1300px at 50% -10%);
         pointer-events: all;
       }
@@ -224,9 +338,9 @@ footer {
       .nav-link a {
         font-size: 1.5em;
       }
+      
     }
   }
-
 
   .section-container {
     justify-content: center;

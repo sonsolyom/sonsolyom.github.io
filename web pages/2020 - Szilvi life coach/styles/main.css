@@ -8,12 +8,12 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #bdbdbd;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 a {
-  color: #bdbdbd;
+  color: #d3a7ad;
   text-decoration: none;
 }
 
@@ -26,12 +26,35 @@ a:hover {
 }
 
 .bg {
-  background: url("./image/pexels-ylanite-koppens-934062.jpg");
-  opacity: 0.7;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg::before {
+  content: "";
+  background-image: url("./image/pexels-jess-bailey-designs-1167051.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.bg.welcome::before {
+  content: "";
+  background-image: url("./image/pexels-karolina-grabowska-4041285.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.38;
 }
 
 .main-container {
@@ -78,7 +101,7 @@ a:hover {
 }
 
 .logo a:hover {
-  color: #d3a7ad;
+  color: #fff;
   background-color: transparent;
   -webkit-transform: scale(1.5, 1.5);
           transform: scale(1.5, 1.5);
@@ -87,16 +110,13 @@ a:hover {
 }
 
 .nav-links {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.nav-links :last-child :last-child {
-  padding-right: 2em;
 }
 
 .nav-link {
@@ -110,17 +130,76 @@ a:hover {
   font-weight: 700;
 }
 
+.nav-link .sub {
+  position: absolute;
+  display: none;
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  text-align: center;
+  left: 0;
+}
+
+.nav-link .sub.larger {
+  width: 220px;
+  left: -50%;
+}
+
+.nav-link .sub a {
+  padding: 1em;
+}
+
+ul li:hover ul.sub {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  /* Display the dropdown */
+}
+
+ul li ul.sub li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 180px;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  min-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+footer {
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .welcome-container {
   max-width: 85%;
   margin: 0 auto;
-  color: #d3a7ad;
+  margin-top: 3.5em;
+  color: #691844;
 }
 
-/*.welcome-img {
-  max-height: 70vh;
-  overflow: hidden;
-  object-fit: fill;
-}*/
 .welcome-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,11 +224,13 @@ a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  word-wrap: break-word;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  word-wrap: break-word;
+  align-items: center;
   min-height: 30em;
+  margin-top: 5em;
 }
 
 .brand-text {
@@ -169,28 +250,70 @@ a:hover {
   opacity: .2;
 }
 
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  min-height: 5vh;
+.big-box {
+  max-width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+}
+
+.big-box.help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.big-box .box1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.big-box .box1 img {
+  max-height: 80vh;
+}
+
+.big-box .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-footer {
-  font-weight: 700;
-  cursor: pointer;
+.big-box .box2 p {
+  padding-top: 1em;
+  line-height: 1.5;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
+  .larger {
+    left: 10%;
+  }
+  .larger > li > a {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
   body {
     font-size: 70%;
     -webkit-transition: .2s ease-in-out;
@@ -219,14 +342,14 @@ footer {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
   }
-  .nav-width-container .nav-links {
+  .nav-width-container .nav-links, .nav-width-container .sub {
     position: fixed;
     overflow: hidden;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     text-align: center;
-    background: black;
+    background-color: #757575;
     height: 110vh;
     width: 100%;
     top: -10vh;
@@ -241,12 +364,16 @@ footer {
     transition: all 1s ease-out;
     pointer-events: none;
   }
-  .nav-width-container .nav-links.open {
+  .nav-width-container .nav-links .larger, .nav-width-container .sub .larger {
+    position: relative;
+    left: 0;
+  }
+  .nav-width-container .nav-links.open, .nav-width-container .nav-links .sub, .nav-width-container .sub.open, .nav-width-container .sub .sub {
     -webkit-clip-path: circle(1300px at 50% -10%);
             clip-path: circle(1300px at 50% -10%);
     pointer-events: all;
   }
-  .nav-width-container .nav-links .nav-link a {
+  .nav-width-container .nav-links .nav-link a, .nav-width-container .sub .nav-link a {
     font-size: 1.5em;
   }
   .section-container {
