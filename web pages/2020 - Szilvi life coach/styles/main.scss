@@ -300,6 +300,25 @@ footer {
   .welcome-container {
     max-width: 100%;
     margin: 1em;
+
+    .welcome-text {
+      min-height: 10vh;
+      padding: 0;
+    }
+  
+    .section-container {
+      justify-content: center;
+      
+    }
+  
+    .brand-text::before {
+      display: none;
+    }
+  
+    .brand-text {
+     text-align: center;
+     flex: 1;
+    }
   }
 
 
@@ -363,21 +382,6 @@ footer {
     }
   }
 
-  .welcome-text {
-    min-height: 10vh;
-  }
-
-  .section-container {
-    justify-content: center;
-    
-  }
-
-  .brand-text::before {
-    display: none;
-  }
-
-  .text3 {
-   text-align: center;
-  }
+  
 }
 

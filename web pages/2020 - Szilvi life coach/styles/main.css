@@ -335,6 +335,24 @@ footer {
     max-width: 100%;
     margin: 1em;
   }
+  .welcome-container .welcome-text {
+    min-height: 10vh;
+    padding: 0;
+  }
+  .welcome-container .section-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .welcome-container .brand-text::before {
+    display: none;
+  }
+  .welcome-container .brand-text {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   .nav-width-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -393,20 +411,6 @@ footer {
   }
   .nav-width-container .nav-links .nav-link a, .nav-width-container .sub .nav-link a {
     font-size: 1.5em;
-  }
-  .welcome-text {
-    min-height: 10vh;
-  }
-  .section-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .brand-text::before {
-    display: none;
-  }
-  .text3 {
-    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
