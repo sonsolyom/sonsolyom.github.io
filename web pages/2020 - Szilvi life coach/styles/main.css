@@ -327,7 +327,7 @@ footer {
 
 @media screen and (max-width: 900px) {
   body {
-    font-size: 70%;
+    font-size: 85%;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
   }
