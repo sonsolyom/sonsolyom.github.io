@@ -342,12 +342,15 @@ footer {
       transition: all 1s ease-out;
       pointer-events: none;
 
-      .larger{
-        position: relative;
+      .larger, .sub{
+       // position: static;
         left:0;
+        width: 220px;
+        top: -5%;
+        
       }
 
-      &.open, .sub {
+      &.open, .sub{
         clip-path: circle(1300px at 50% -10%);
         pointer-events: all;
         font-size: 80%;
@@ -378,12 +381,3 @@ footer {
   }
 }
 
-/*@media (min-width: 600px) {
-  html {
-      background: url('./image/pexels-karolina-grabowska-4041285.jpg') no-repeat center center fixed; 
-      background-size: cover;
-  }
-  .html-mobile-background {
-      display: none;
-  }
-}*/
