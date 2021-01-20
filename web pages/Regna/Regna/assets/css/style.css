@@ -590,7 +590,7 @@ section {
 
 #about .about-container .background {
   min-height: 500px;
-  background: url(../img/IRISZ\ AND\ SOLYOM\ 2.jpg) center top no-repeat;
+  background: url(../img/iriszandsolyom2.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
 
@@ -757,7 +757,7 @@ section {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/dancing-wallpaper_3691689.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
