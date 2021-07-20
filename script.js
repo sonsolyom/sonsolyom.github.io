@@ -4,7 +4,7 @@ const reviewsEn = [
       id: 1,
       name: "Írisz",
       text:
-        "I know him as an individual of great capacity and extreme conscientious. Yuo can ask any question or have any request he will be more than honored to be at your service. He can take any challenge in any situation to provide at the highest value.",
+        "I know him as an individual of great capacity and extreme conscientious. You can ask any question or have any request he will be more than honored to be at your service. He can take any challenge in any situation to provide at the highest value.",
     },
     {
       id: 2,
